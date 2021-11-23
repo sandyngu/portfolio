@@ -36,7 +36,7 @@ function AboutMe() {
                         various technical languages. I am committed to lifelong learning and am so 
                         eager to grow my technical skills and build wonderful, life-altering applications.
                         My passion for technology extends to my hobby of playing PC games in my 
-                        spare time -- particularly Valorant and League of Legends. I even built my own PC this spring!
+                        spare time -- particularly Valorant and League of Legends. I even built my own PC last spring!
 
                         <br/><br/><q className="aboutme__text aboutme__text-quote">Dream it. Believe it. Build it.</q>
 

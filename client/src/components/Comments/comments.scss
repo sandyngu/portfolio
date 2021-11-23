@@ -25,6 +25,10 @@
             width: 30%;
             z-index: 1;
             text-align: left;
+
+            &-break {
+                height: 5%;
+            }
         }
         &-comments {
             font-size: 3vw;
@@ -45,6 +49,7 @@
             color: white;
             font-size: 2vw;
             text-align: right;
+            margin: 0;
         }
         &-input {
             border-radius: 0.2vw;
@@ -54,6 +59,7 @@
             padding: 0.8vw;
             opacity: 0.9;
             outline: none;
+            margin: 0;
 
             &--name {
                 height: 1vw;

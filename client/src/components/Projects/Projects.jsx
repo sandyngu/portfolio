@@ -34,6 +34,7 @@ import NurSimulator5 from '../../assets/images/capstone5.png';
 import NurSimulator6 from '../../assets/images/capstone6.png';
 import NurSimulator7 from '../../assets/images/capstone7.png';
 import NurSimulator8 from '../../assets/images/capstone8.png';
+import Chawp from '../../assets/images/chawpsticks.png';
 import Border from '../../assets/images/border.png';
 import ArrowBorder from '../../assets/images/arrow-border.png';
 import Bookshelf from '../../assets/images/bookshelf.png';
@@ -125,6 +126,29 @@ function Projects(props) {
                     <img src={Line} alt="Clothes Line" className="projects__line"/>
                 </div>
                 <div className="projects__image-container">
+                    <ProjectCard onClick={() => props.toggleCapstone()}>
+                        <img src={Chawp} alt="Chawpsticks x Valorant" className="projects__image projects__image0"/>
+                        <img onClick={() => setBorder1(prevMode => !prevMode)} src={border1 ? ArrowBorder : Border} alt="Border" className="projects__border projects__border"/>
+                        <div className="project__card-container">
+                            <p className="projects__text projects__text-two" onClick={() => props.toggleCapstone()}>chawpsticks x valorant.</p>
+                        </div>
+                        <ProjectCardDescription>
+                            <p className="project__card-popup-description-title">Personal Project: ChawpsticksxValorant</p>
+                            <p className="project__card-popup-description">Created a single-page application (created from React, HTML, CSS/Sass, JavaScript, NodeJS, Express, Bookshelf, Knex and MySQL database) dedicated to highlighting my own personal achievements in Riot Games' Valorant. Showcasing highlight clips captured in-game, as well as some of my friends' clips. Enjoy watching videos of songs created for each unique game character or agent and browse the gallery with some neat fan art. </p>
+                            <TechStacks>
+                                <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
+                                <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
+                                <img src={SCSS} className="project__card-popup-description-logo" alt="Sass Logo"/>
+                                <img src={JS} className="project__card-popup-description-logo" alt="JavaScript Logo"/>
+                                <img src={ReactJS} className="project__card-popup-description-logo" alt="React Logo"/>
+                                <img src={Node} className="project__card-popup-description-logo" alt="Node Logo"/>
+                                <img src={Express} className="project__card-popup-description-logo" alt="Express Logo"/>
+                                <img src={Bookshelf} className="project__card-popup-description-logo" alt="Bookshelf Logo"/>
+                                <img src={Knex} className="project__card-popup-description-logo" alt="Knex Logo"/>
+                                <img src={MySQL} className="project__card-popup-description-logo" alt="MySQL Logo"/>
+                            </TechStacks>
+                        </ProjectCardDescription>
+                    </ProjectCard>
                     <ProjectCard onClick={() => props.toggleCapstone()}>
                         <img src={NurSimulator8} alt="NurSimulator" className="projects__image projects__image8"/>
                         <img src={NurSimulator7} alt="NurSimulator" className="projects__image projects__image7"/>
